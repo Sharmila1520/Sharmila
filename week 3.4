@@ -1,0 +1,11 @@
+def chinese_zodiac(year):
+    animals = ['Monkey', 'Rooster', 'Dog', 'Pig', 'Rat', 'Ox', 'Tiger', 'Hare', 'Dragon', 'Snake', 'Horse', 'Sheep']
+    return animals[year % 12]
+
+def main():
+    year = int(input())
+    animal = chinese_zodiac(year)
+    print(f"{year} is the year of the {animal}.")
+
+if __name__ == "__main__":
+    main()
