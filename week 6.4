@@ -1,0 +1,6 @@
+m = int(input())
+n = int(input())
+list1 = [[int(input()) for j in range(n)] for i in range(m)]
+list2 = [[int(input()) for j in range(n)] for i in range(m)]
+zipped_list = [list1[i] + list2[i] for i in range(m)]
+print(zipped_list)
