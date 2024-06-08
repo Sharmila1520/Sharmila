@@ -1,0 +1,10 @@
+def is_keyword(word):
+    keywords = {"break", "case", "continue", "default", "defer", "else", "for", "func", "goto", "if", "map", "range", "return", "struct", "type", "var"}
+    return word in keywords
+
+word = input().strip()
+if is_keyword(word):
+    print(word + " is a keyword")
+else:
+    print(word + " is not a keyword")
+
