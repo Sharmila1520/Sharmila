@@ -1,0 +1,15 @@
+def is_allowed(last_week_problems, solved_problems):
+    # Check if the student solved at least half of the problems given last week
+    if solved_problems >= (last_week_problems / 2):
+        return True
+    else:
+        return False
+
+# Test cases
+last_week_problems = int(input())
+solved_problems = int(input())
+
+if is_allowed(last_week_problems, solved_problems):
+    print("IN")
+else:
+    print("OUT")
