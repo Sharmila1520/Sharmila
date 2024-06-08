@@ -1,0 +1,15 @@
+n = int(input())
+arr = [int(input()) for i in range(n)]
+search_element = int(input())
+locations = []
+count = 0
+for i in range(n):
+    if arr[i] == search_element:
+        locations.append(i + 1)
+        count += 1
+if count > 0:
+    for loc in locations:
+        print(f"{search_element} is present at location {loc}.")
+    print(f"{search_element} is present {count} {'time' if count == 1 else 'times'} in the array.")
+else:
+    print(f"{search_element} is not present in the array.")
